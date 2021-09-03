@@ -1,5 +1,6 @@
 // import { mdConvert } from 'md-converter'
 
+import Sortable from './components/sortable/Sortable';
 import Upload from './components/upload/Upload';
 
 console.log('app.js bundled');
@@ -57,3 +58,5 @@ window.upload = new Upload('.upload', (result) => {
 
 //   URL.revokeObjectURL(result);
 // }, 'file');
+
+window.sortable = new Sortable('.items');
